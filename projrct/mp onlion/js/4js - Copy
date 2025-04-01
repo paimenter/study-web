@@ -1,0 +1,68 @@
+function HideProgress() {
+            var modal = $('<div />');
+            modal.addClass("modal");
+            $('body').append(modal);
+            var loading = $(".loading");
+            loading.hide();
+        }
+        function jsShowHideProgress() {
+            //   debugger;
+            //alert('1');
+            ShowProgress();
+            deleteCookie();
+
+            var timeInterval = 500; // milliseconds (checks the cookie for every half second )
+            var loop = setInterval(function () {
+                if (IsCookieValid()) {
+
+                    HideProgress();
+                    clearInterval(loop);
+                }
+
+            }, timeInterval);
+        }
+
+        // cookies
+        function deleteCookie() {
+            var cook = getExcelCookie('RptDwnloadFlag');
+            if (cook != "") {
+                document.cookie = "RptDwnloadFlag=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            }
+        }
+
+        function IsCookieValid() {
+            var cook = getExcelCookie('RptDwnloadFlag');
+
+            return cook != '';
+        }
+
+        function getExcelCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function ShowProgress() {
+            // alert('1');
+            //        setTimeout(function () {
+            var modal = $('<div />');
+            modal.addClass("modal");
+            $('body').append(modal);
+            var loading = $(".loading");
+            loading.show();
+            var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+            var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+            loading.css({ top: top, left: left });
+            //        }, 200);
+        }
+        $('form').on("submit", function () {
+            ShowProgress();
+        });

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+<title>Skew Text</title> 
+</head> 
+<style> 
+*{ 
+	margin: 0; 
+	padding: 0; 
+} 
+
+div{ 
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	display: flex; 
+	align-items: center; 
+} 
+span{ 
+	height: 40px; 
+	width: 40px; 
+	margin-right: -2px; 
+	background-color: green; 
+	text-align: center; 
+	font-size: 2em; 
+} 
+div:hover span:nth-child(odd){ 
+	transform: skewY(-15deg); 
+} 
+div:hover span:nth-child(even){ 
+	transform: skewY(15deg); 
+} 
+
+</style> 
+
+<body> 
+<div> 
+	<span>G</span> 
+	<span>E</span> 
+	<span>E</span> 
+	<span>K</span> 
+	<span>S</span> 
+	<span>F</span> 
+	<span>O</span> 
+	<span>R</span> 
+	<span>G</span> 
+	<span>E</span> 
+	<span>E</span> 
+	<span>K</span> 
+	<span>S</span> 
+	
+</div> 
+</body> 
+</html>

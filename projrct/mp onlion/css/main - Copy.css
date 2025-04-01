@@ -1,0 +1,388 @@
+.preheader  {
+    width: 100%;
+    height: 35px;
+    background-image: url('../../Images/MainPageimg/preheader_texture.jpg');
+    position: fixed;
+    z-index: 999;
+    position:fixed;
+}
+
+
+.preheader_inner_page {
+    width: 100%;
+    height: 35px;
+    background-image: url('../../Images/MainPageimg/preheader_texture.jpg');
+    z-index: 999;
+ 
+}
+
+
+
+.logo_header{float:left;}
+
+
+
+.mpo_logo {
+    width: 258px;
+    height: 52PX;
+    float: right;
+    margin: 16px 0 0 0;
+}
+.mpbse_inner_header {
+height: 92px;
+width: 100%;
+background-color: #204687;
+transition: all 0.3s;
+}
+
+
+.mpbse_inner_header {
+  
+
+    height: 92px;
+   
+    width: 100%;
+   /* background-image: url('../../Images/MainPageimg/header_bg.jpg');
+    background-repeat: no-repeat;*/
+   background-color:#204687;
+
+    transition: all 0.3s;
+   
+  
+}
+.mpbse_inner_header_inner {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+}
+
+
+
+
+.preheader_inner {
+    width: 90%;
+    margin: 0 auto;
+}
+.right_links {
+    float: right;
+    color: #fff;
+}
+.container {
+width: 90%;
+margin: 0 auto;
+/*background-color: #fff;*/
+min-height: 80vh;/*	box-shadow: 0 0 5px #999;*/
+}
+
+/*LOGIN PAGE CSS*/
+.inner_container {
+width: 90%;
+margin: 0 auto;
+/*min-height: 80vh*/;
+padding: 10px;
+}
+
+.index_heading {
+font-size: 24px;
+text-align: center;
+padding: 20px 0;
+font-weight: bold;
+}
+/*link box*/
+
+.Section {
+width: 100%;
+margin: 0 auto;
+padding: 0;
+}
+
+
+
+.Section_contact {
+width: 100%;
+margin: 0 auto;
+padding: 1%;
+background-attachment: fixed;
+
+background-color:#4d5256;
+}
+
+.link_box {
+width: 29.3%;
+float: left;
+padding: 1.5%;
+background-color: #bd3232;
+text-align: center;
+margin: 0 2% 2% 2%;min-height:207px;
+}
+.link_box:hover {
+background-color: #730000;
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+display: block;
+}
+.link_box p {
+margin: 0;
+padding: 0;
+color: #fff;
+}
+.link_box h4 {
+font-size: 18px;
+margin: 0;
+padding: 0;
+color: #fff;
+}
+.link_box img {
+margin: 5px;
+}
+.link_box a {
+text-decoration: none;
+color: #fff;
+cursor: pointer;
+}
+.box_color1 {
+background-color: #3da542;
+}
+.box_color2 {
+background-color: #1c2c6b;
+}
+.box_color1:hover {
+background-color: #085C0C;
+}
+.box_color2:hover {
+background-color: #030C2E;
+}
+
+
+.left {
+width: 29.3%;
+float: left;
+border-top: 3px solid #ffc600;
+background-color: #f9f9f9;
+padding: 1%;
+margin: 0 2%;
+box-shadow: 0 0 5px #ccc;
+}
+.left h3 {
+font-size: 18px;
+margin: 0;
+padding: 0;
+color: #000;
+}
+.left ul {
+margin: 0;
+padding: 0;
+}
+.left ul li {
+padding: 10px;
+list-style: none;
+display: block;
+}
+.left ul li a {
+color: #000;
+text-decoration: underline;
+}
+.left ul li a:hover {
+color: #860002;
+text-decoration: underline;
+}
+.left ul li img {
+margin: 0 10px 0 0;
+}
+.right {
+width: 62.7%;
+float: left;
+border-top: 3px solid #ffc600;
+background-color: #f9f9f9;
+padding: 1%;
+margin: 0 2%;
+box-shadow: 0 0 5px #ccc;
+}
+.right h3 {
+font-size: 18px;
+margin: 0;
+padding: 0;
+color: #000;
+}
+.news_area {
+width: 98%;
+padding: 8px;
+border: 1px solid #ccc;
+height: 300px;
+}
+
+.instruction {
+width: 98%;
+padding: 60px 0 0 0;
+color: #000;
+margin: 0 auto;
+}
+
+.links {
+width: 98%;
+border: 1px solid #ccc;
+height: 300px;
+
+}
+
+
+.back_link{float:right;}
+
+.back_link a{color:#000; font-size:16px; text-decoration:none;  }
+
+.back_link img{margin:0 5px 0 0;}
+
+.mandatory_text{float:right; font-size:12px;}
+
+.adress {
+width: 100%;
+text-align: center;
+color: #fff;
+}
+.adress p {
+line-height:1;
+}
+
+.map {padding: 0%;
+border: 3px solid #ffc600;
+width: 44%;
+margin: 0.8% 0 0 0;
+}
+.footer {
+width: 100%;
+background-image: url(../../Images/MainPageimg/preheader_texture.jpg);
+text-align: center;
+color: #fff;
+line-height: 40px;
+font-size: 12px;
+position:relative;
+}
+.footer img {
+vertical-align: middle;
+}
+
+.servr_name{padding:10px; background-color:#ff9600; color:#000; position:absolute; bottom:4px; left:10px; font-size:14px;line-height:30px; border-radius:10px;}
+
+
+
+
+
+
+
+
+
+
+
+.innerpage_heading {
+font-size: 24px;
+padding: 0 0 5px 0;
+font-weight: bold;
+
+border-bottom: 4px solid #eee;
+width: 100%;
+margin-bottom: 1%;
+}
+.left_pannel {
+width: 64%;
+float: left;
+margin: 2% 1% 0 0;
+}
+.right_pannel {
+width: 35%;
+float: left;
+padding: 2%;
+margin: 2% 0 0 0;
+background-color: rgba(255, 255, 255, 0.6);
+box-shadow: 0 0 5px #ccc;
+
+}
+.mpbse_newtable {
+width: 100%;
+border-collapse: collapse;
+font-size: 15px;
+}
+.mpbse_newtable th {
+padding: 10px;
+border: #ddd 1px solid;
+color: #fff;
+margin: 0 0 0 0;
+font-weight: normal;
+text-align: left;
+background-color: #487ee0;
+font-size: 18px;
+}
+.mpbse_newtable td {
+padding: 10px;
+border: #ddd 1px solid;
+text-align: left;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+
+.mpbse_newtable tr {
+background: #9FD9FF;
+}
+/*  Define the background color for all the ODD background rows  */
+
+.mpbse_newtable tr:nth-child(odd) {
+background: #FBFBFB;
+}
+/*  Define the background color for all the EVEN background rows  */
+
+.mpbse_newtable tr:nth-child(even) {
+background: #f7f7f7;
+}
+.mpbse_newtable input[type="text"], input[type="password"], textarea, select {
+padding: 7px;
+border-radius: 4px;
+background-color: #fff;
+border: #ddd 1px solid;
+width: 100%;
+}
+.mpbse_newtable input:focus {
+outline: none;
+box-shadow: 0px 0px 5px #ddd;
+border: #ddd 1px solid;
+}
+.mpbse_newtable input:hover {
+border-radius: 5px;
+}
+.mpbse_newtable select {
+width: 100%;
+}
+.mpbse_newtable select:focus {
+outline: none;
+box-shadow: 0px 0px 5px #61C5FA;
+border: #ddd 1px solid;
+}
+.mpbse_newtable select:hover {
+border: #ddd 1px solid;
+border-radius: 5px;
+}
+.mpbse_newtable textarea:focus {
+outline: none;
+box-shadow: 0px 0px 5px #ddd;
+border-color: #ffd0b4;
+}
+.mpbse_newtable textarea:hover {
+border: 1px solid #eaeaea;
+border-radius: 5px;
+}
+.mpbse_newtable .btn {
+background-color: #ffa200;
+border: none !important;
+padding: 8px 8px;
+color: #fff;
+font-size: 14px;
+border-radius: 5px 5px;
+}
+.mpbse_newtable .btn:hover, .btn:active {
+background-color: #C77E00;
+border: none !important;
+padding: 8px 8px;
+color: #fff !important;
+font-size: 14px;
+border-radius: 5px 5px;
+}

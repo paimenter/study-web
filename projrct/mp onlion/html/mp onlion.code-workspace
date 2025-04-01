@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../our_room12"
+		},
+		{
+			"path": "E:/main www/WEBSITE"
+		},
+		{
+			"path": "../../Personal"
+		},
+		{
+			"path": "../../cakezone"
+		},
+		{
+			"path": "../../../../../../ehdms"
+		},
+		{
+			"path": "../../web design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "mp onlion"
+	}
+}

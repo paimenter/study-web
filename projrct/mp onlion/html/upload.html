@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="">
+            <img src="https://seeklogo.com/images/M/madhya-pradesh-logo-F386EFA8BB-seeklogo.com.png" style="height: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">login </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registesion.html">registesion </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="upload.html">upload Image </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/watch?v=LvlOiVyid5c">video </a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href=" https://www.youtube.com/watch?v=1M41AlEeOr0">happy teachers day </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="e-granthalay.html">e-granthalay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/shorts/-icKcWdzEm0">college video  </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-info" style="text-align: center; color:white; font-weight: bolder;">Login form</div>
+                    <div class="card-body">
+                        <form action="beckend.php">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary" style="text-align: center; color:white; font-weight: bolder;"> Fees slip upload form</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="Roll No.">Roll No.</label>
+                                <input type="text" class="form-control" id="Roll No." placeholder="Enter your Roll number">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone No.">phone No.</label>
+                                <input type="number" class="form-control" id="phone No." placeholder="Enter your Mob.NO.">
+                            </div>
+                            <div class="form-group">
+                                <label for="Gender">Gender</label>
+                                <input type="text" class="form-control" id="Gender" placeholder="Enter your Gender name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fees deposit">fees deposit</label>
+                               <select id="mySelect" placeholder="payment ID"  name="cars"  class="form-control">
+								 
+								<option >punjab national bank</option> 
+								<option value="option"> Online Transaction</option> 
+								 
+							  </select>
+							  
+							  <!-- Input Box -->
+							  <input type="text" id="inputBox" placeholder="Online Transaction Id" style="display: none;  margin: 10px;">
+							  
+							  <script>
+							  document.getElementById("mySelect").addEventListener("change", function() {
+								var selectValue = this.value;
+							  
+								// If "option3" is selected, show the input box, otherwise hide it
+								if (selectValue || "option " ) {
+								  document.getElementById("inputBox").style.display = "block";
+								} else {
+								  document.getElementById("inputBox").style.display = "none";
+								}
+							  });
+							  </script>
+                            </div>
+                            <div class="form-group">
+                                <label for="paytem date">paytem date</label>
+                                <input type="date" class="form-control" id="paytem date" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">address</label>
+                               
+                                <textarea   class="form-control"id="address" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for=" image"> image</label>
+                                <input type="file"   id="file upload"  >
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button type="view" class="btn btn-success btn-block">view</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary" style="text-align: center; color:white; font-weight: bolder;">Login form</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="Roll No.">Roll No.</label>
+                                <input type="text" class="form-control" id="Roll No." placeholder="Enter your Roll number">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone No.">phone No.</label>
+                                <input type="number" class="form-control" id="phone No." placeholder="Enter your Mob.NO.">
+                            </div>
+                            <div class="form-group">
+                                <label for="Gender">Gender</label>
+                                <input type="text" class="form-control" id="Gender" placeholder="Enter your Gender name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fees deposit">fees deposit</label>
+                               <select id="mySelect" placeholder="payment ID"  name="cars"  class="form-control">
+								 
+								<option >punjab national bank</option> 
+								<option value="option"> Online Transaction</option> 
+								 
+							  </select>
+							  
+							  <!-- Input Box -->
+							  <input type="text" id="inputBox" placeholder="Online Transaction Id" style="display: none;  margin: 10px;">
+							  
+							  <script>
+							  document.getElementById("mySelect").addEventListener("change", function() {
+								var selectValue = this.value;
+							  
+								// If "option3" is selected, show the input box, otherwise hide it
+								if (selectValue || "option " ) {
+								  document.getElementById("inputBox").style.display = "block";
+								} else {
+								  document.getElementById("inputBox").style.display = "none";
+								}
+							  });
+							  </script>
+                            </div>
+                            <div class="form-group">
+                                <label for="paytem date">paytem date</label>
+                                <input type="date" class="form-control" id="paytem date" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">address</label>
+                               
+                                <textarea   class="form-control"id="address" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for=" image"> image</label>
+                                <input type="file"   id="file upload"  >
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button type="view" class="btn btn-success btn-block">view</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>

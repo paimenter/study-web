@@ -1,0 +1,54 @@
+ var MyHashed, MyHashed2;
+        var salt;
+        function test2() {
+            //debugger;
+            var usrnam = "";
+            var pwd = "";
+            usrnam = document.getElementById("txtUserCode").value;
+            pwd = document.getElementById("txtPassword").value;
+            re = /^[a-zA-Z0-9]{3,10}$/;
+            if (!re.test(document.getElementById("txtUserCode").value)) {
+                alert("\"User Code\" should be Alphanumeric and Min 3 - Max 10 characters.");
+                document.getElementById("txtUserCode").focus();
+                return (false);
+            }
+            if (pwd == "") {
+                alert("Please enter proper \"Password\" field.");
+                document.getElementById("txtPassword").focus();
+                return (false);
+            }
+            if (document.getElementById("txtPassword").value.length < 3) {
+                alert("Length of \"Password\" should be Min 3 characters.");
+                document.getElementById("txtPassword").focus();
+                return (false);
+            }
+            if (document.getElementById("txtPassword").value.length > 10) {
+                alert("Length of \"Password\" should be Max 10 characters.");
+                document.getElementById("txtPassword").focus();
+                return (false);
+            }
+
+            else {
+                salt = 'xCIu2iePFLN';
+                //MyHashed = hex_md5(document.getElementById("txtPassword").value);
+                //var str1;
+                //str1 = salt + MyHashed;
+                //var hashplus = hex_md5(str1);
+
+                MyHashed2 = sha256(document.getElementById("txtPassword").value);
+                // document.getElementById("SHA_Hash_Pass").value = MyHashed2;
+
+                var str2;
+                str2 = salt + MyHashed2;
+                var hashplus1 = sha256(str2);
+
+                //document.getElementById("RKPass").value = hashplus;
+                document.getElementById("SaltedSHA_Hash_Pass").value = hashplus1;
+                document.getElementById("txtPassword").value = "";
+                jsShowHideProgress();
+                return (true);
+
+            }
+
+            return (false);
+        }
